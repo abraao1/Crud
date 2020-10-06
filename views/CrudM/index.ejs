@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>👨‍💻REGISTRAR</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        body{
+            background-image: radial-gradient(circle at 95.57% 76.31%, #cde58e 0, #c0e895 5%, #b3ea9c 10%, #a6eca5 15%, #98eeaf 20%, #8aefb9 25%, #7bf1c4 30%, #6cf1cf 35%, #5cf2db 40%, #4cf2e7 45%, #3cf2f2 50%, #2ef2fd 55%, #25f1ff 60%, #28efff 65%, #35eeff 70%, #46ecff 75%, #5aeaff 80%, #6ee7ff 85%, #82e4ff 90%, #95e1ff 95%, #a8ddff 100%);
+            font-family: 'Grandstander', cursive;
+        }
+        form{
+            width: 290px;
+            margin: 12px;
+            font-size: 15px;  
+        }
+        .baixo{
+            margin: 15px;
+        
+        }
+        h2{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    </header>
+    <h2>Registrar<h2>
+        <div class="form-group">
+            <form action="/show/matheus" method="POST" >
+                <label for="Nome">Nome</label>
+                <input type="text" placeholder="Nome" name="name" class="form-control" required>
+                
+                <label for="Sobrenome">Sobrenome</label>
+                <input type="text" placeholder="Sobrenome" name="surname"  class="form-control" required>
+                
+                <label for="Sexo">Sexo</label>
+                <input type="text" placeholder="Sexo" name="sexo"  class="form-control" name="sexo" required>
+                
+                <label for="Cpf">Cpf</label>
+                <input type="number" placeholder="Cpf" name="cpf"  class="form-control" min="0" size="11" max="99999999999" required>
+                
+                <label for="Email">Email</label>
+                <input type="email" placeholder="Email" name="email"  class="form-control" required>
+                
+                <label for="Numero">Numero</label>
+                <input type="number" placeholder="Numero" name="numero"  class="form-control"  min="0" size="11" max="99999999999" required>
+                
+                <label for="Cep">Cep</label>
+                <input type="number" placeholder="Cep" name="cep"  class="form-control"   min="0" size="8" max="99999999" required>
+        
+                <label for="uf">UF/CIDADE</label>
+                <input type="text" placeholder="UF/CIDADE" name="ufCidade" class="form-control" required>
+        </div>
+                <div class="baixo">
+                    <button type="submit" class="btn btn-dark btn-sm"><a>LOAD</a></button>
+                    <a href="/show/matheus" class="btn btn-dark btn-sm">Registros</a>
+                    <button type="submit" class="btn btn-dark btn-sm"><a href="/">Tela inicial</a></button>
+
+                </div>
+                
+            </form> 
+        
+</body>
+</html>
